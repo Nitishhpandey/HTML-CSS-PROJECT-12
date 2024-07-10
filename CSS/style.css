@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .container{
+    background-color: #5D8AA8;
+    height: 100%; 
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.list{
+    display: flex;
+    
+    overflow-y: auto;  
+    /* height: 50px;   */
+    /* background-color: #333; */
+    color: #fff;
+}
+.list-item{
+    margin: 1rem 1rem;
+    font-size: 16px;
+    color: white;
+    list-style: none;
+    font-weight: 400;
+ 
+}
+.logo{
+    width: 100px;
+    margin-top: 1rem;
+}
+button{
+    margin-top: 2rem;
+}
+ .btn-header{
+    background: transparent;
+    color: white;
+    border-style: none;
+    border: 1px solid whitesmoke;
+    height: 2rem;
+    width: 8rem;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+    text-align: center;
+ }
+
+ /* media query for the navbar */
+
+ @media only screen and (max-width: 915px) {
+  .logo img{
+    width: 80px;
+    height: 40px;
+  }
+  .btn-header{
+    height: 1rem;
+    width: 5rem;
+    margin-left: 1rem;
+  }
+
+  .hero-section{
+    flex-flow: column wrap;
+    align-items: center;
+   }
+    .hero-right h1{
+      align-items: center;
+      /* font-size: 2rem; */
+    }
+
+  }
+
+    
+
+ 
+
+ .hero-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+ }
+ .hero-left img{
+    height: 500px;
+    width: 450px;
+    border-radius: 1rem;
+ }
+ .hero-right h1{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 4rem;
+
+ }
+
+ .hero-right p{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1rem;
+ }
+
+  .nav-search{
+    margin-top: 2rem;
+     
+ } 
+
+ /* second block */
+
+
+ .second-block{
+   background-color: white;
+   margin-top: 5rem;
+ }
+
+ .text{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 5rem;
+ }
+
+ .data{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+ }
+
+ .data h2{
+    text-align: center;
+ }
+ .data span{
+    font-weight: 200;
+    font-size: 1rem;
+ }
+
+ .image img{
+    height: 450px;
+    width: 500px;
+    align-items: center;
+    /* text-align: center; */
+    /* border-radius: 2rem; */
+    margin-top: 5rem;
+    margin-left: 35%;
+ }
+
+
+ @media only screen and (max-width: 915px) {
+
+
+  .text{
+    
+  }
+ }
+
+ .third-block{
+   /* margin-top: 3rem; */
+   background-color: white;
+ } 
+ .text{
+   text-align: center;
+   font-weight: 700;
+   font-size: 2rem;
+   margin-top: 1rem;
+ }
+
+ .text h2{
+  margin-top: 2rem;
+ }
+ 
+  
+
+ .sub-section{
+   display: flex;
+   justify-content: space-evenly;
+ }
+ .left{
+  margin-top: 20rem;
+  text-transform: capitalize;
+   
+ }
+
+ .left h3{
+   font-size: 2rem;
+   font-weight: 600;
+ }
+
+ .left p {
+   margin-top: 2rem;
+   color: gray;
+ }
+ .left-btn{
+   background-color: #1B4D3E;
+   font-size: 1rem;
+   margin: 1rem 0rem;
+   padding:.8rem;
+   color: rgba(255, 255, 255, 0.788);
+   border-style: none;
+   margin-top: 2rem;
+ }
+
+ .right-img img{
+  height: 450px;
+  width: 500px;
+  margin-top: 10rem;
+ }
+
+
+ .fourth-block{
+   display: flex;
+   justify-content:space-evenly;
+   background-color: white;
+   margin-top: 2rem;
+ }
+ 
+ .image-left img{
+  height: 400px;
+  width: 400px;
+  margin-top: 9rem;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+ }
+ 
+
+ .frth-img img{
+   height: 400px;
+   width: 450px;
+   /* margin-top: 8rem; */
+   clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+ 
+ }
+
+ .right-block h3{
+   margin-top: 7rem;
+   font-weight: 600;
+   font-size: 2rem;
+   margin-left: 3rem;
+   text-transform: capitalize;
+ }
+ .left-btns{
+  background-color: #1B4D3E;
+  font-size: 1rem;
+  /* margin: 1rem 0rem; */
+  padding:.8rem;
+  color: rgba(255, 255, 255, 0.788);
+  border-style: none;
+  margin-top: 0rem;
+}
