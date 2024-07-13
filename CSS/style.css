@@ -16,10 +16,6 @@
 }
 .list{
     display: flex;
-    
-    overflow-y: auto;  
-    /* height: 50px;   */
-    /* background-color: #333; */
     color: #fff;
 }
 .list-item{
@@ -49,33 +45,32 @@ button{
     text-align: center;
  }
 
- /* media query for the navbar */
 
- @media only screen and (max-width: 915px) {
-  .logo img{
-    width: 80px;
-    height: 40px;
+ /* media query */
+@media only screen and (max-width: 915px) {
+  .logo img {
+      width: 80px;
+      height: 40px;
   }
-  .btn-header{
-    height: 1rem;
-    width: 5rem;
-    margin-left: 1rem;
+  .btn-header {
+      height: 1.5rem;
+      width: 6rem;
+      margin-left: 1rem;
   }
-
-  .hero-section{
-    flex-flow: column wrap;
-    align-items: center;
-   }
-    .hero-right h1{
+  .nav {
+      flex-direction: column;
       align-items: center;
-      /* font-size: 2rem; */
-    }
-
   }
+  .list {
+      flex-direction: column;
+      align-items: center;
+  }
+  .list-item {
+      margin: 0.5rem 0;
+  }
+}
 
-    
-
- 
+/* hero section */
 
  .hero-section{
     display: flex;
@@ -105,6 +100,38 @@ button{
     margin-top: 2rem;
      
  } 
+
+ /*  Hero Section */
+@media only screen and (max-width: 915px) {
+  .hero-section {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
+  }
+  .hero-left img {
+      height: auto;
+      width: 100%;
+      max-width: 350px;
+      border-radius: 1;
+  }
+  .hero-right h1 {
+      font-size: 3rem;
+      text-align: center;
+  }
+  .hero-right p {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+  }
+  .nav-search {
+      margin-top: 1.5rem;
+      text-align: center;
+  }
+  .search-input {
+      width: 100%;
+      margin-bottom: 0.5rem;
+  }
+}
 
  /* second block */
 
@@ -140,23 +167,37 @@ button{
     height: 450px;
     width: 500px;
     align-items: center;
-    /* text-align: center; */
-    /* border-radius: 2rem; */
+     
     margin-top: 5rem;
     margin-left: 35%;
  }
 
-
- @media only screen and (max-width: 915px) {
-
-
-  .text{
-    
+ 
+/* Second Block (Data Section) */
+@media only screen and (max-width: 915px) {
+  .data {
+      flex-wrap: wrap;
   }
- }
+  .data h2 {
+      font-size: 2rem;
+      text-align: center;
+  }
+  .data span {
+      font-size: 0.8rem;
+  }
+  .image img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 2rem auto;
+  }
+}
+
+/* third block */
+
 
  .third-block{
-   /* margin-top: 3rem; */
+    
    background-color: white;
  } 
  .text{
@@ -207,7 +248,40 @@ button{
   margin-top: 10rem;
  }
 
+ /* Third Block */
+@media only screen and (max-width: 915px) {
+  .sub-section {
+      flex-direction: column;
+      align-items: center;
+  }
+  .left {
+      margin-top: 3rem;
+      text-align: center;
+  }
+  .left h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+  }
+  .left p {
+      margin-top: 1rem;
+      text-align: center;
+  }
+  .left-btn {
+      margin-top: 1rem;
+  }
+  .right-img img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-top: 2rem;
+  }
+}
 
+
+
+
+
+ /* fourth block */
  .fourth-block{
    display: flex;
    justify-content:space-evenly;
@@ -226,7 +300,7 @@ button{
  .frth-img img{
    height: 400px;
    width: 450px;
-   /* margin-top: 8rem; */
+    
    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
  
  }
@@ -241,9 +315,39 @@ button{
  .left-btns{
   background-color: #1B4D3E;
   font-size: 1rem;
-  /* margin: 1rem 0rem; */
   padding:.8rem;
   color: rgba(255, 255, 255, 0.788);
   border-style: none;
   margin-top: 0rem;
+}
+
+
+/*  Fourth Block */
+@media only screen and (max-width: 915px) {
+  .fourth-block {
+      flex-direction: column;
+      align-items: center;
+  }
+  .image-left img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-top: 3rem;
+      clip-path: none;
+  }
+  .frth-img img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-top: 2rem;
+      clip-path: none;
+  }
+  .right-block h3 {
+      margin-top: 3rem;
+      text-align: center;
+      margin-left: 0;
+  }
+  .left-btns {
+      margin-top: 1rem;
+  }
 }
